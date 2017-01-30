@@ -1,6 +1,6 @@
 "use strict";
 
-// takes user input into account, either choosing "front" or "back" of the basic card (ex: node BasicCard.js front)
+// takes user input into account, either choosing "front", "back", and "both" of the basic card (ex: node BasicCard.js front)
 var input = process.argv;
 var side = input[2];
 
@@ -22,7 +22,7 @@ function basicCard (front, back) {
 	}
 }
 
-// variable for the card that returns a newly created object that inheries from the constructor's 
+// variable for the card that returns a newly created object that inherits from the constructor
 var gWashington = new basicCard("Who was the first president of the United States?", "George Washington");
 
 // if user inputs "front", the user will be shown the front of the card which contains the question
